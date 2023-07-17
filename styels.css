@@ -1,24 +1,109 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
-.nav-container{
+
+/* nav styles starts here */
+.nav-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-top: 40px;
 }
-.nav-list{
+
+.nav-list {
     display: flex;
 }
-.items{
+
+.items {
     list-style: none;
     justify-content: space-evenly;
     margin-right: 30px;
-    pad: 20px;
     align-items: center;
     cursor: pointer;
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
 }
-.nav-list:hover{
-    color: blue;
+
+.nav-title {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* nav styles ends here */
+.greetings-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 130px 180px;
+    align-items: center;
+}
+
+.back-pic {
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.greetings-title {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.greetings-dis {
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.btn-one{
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    border-radius: 41px;
+    padding: 10px 25px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .nav-container{
+        flex-direction: column;
+       
+    }
+    .nav-list{
+        margin-top: 10px;
+    }
+    .greetings-container{
+        flex-direction: column-reverse;
+        padding: 10px;
+        text-align: center;
+    }
+    .greetings-title{
+        font-size: 1.7rem;
+        font-weight: 700;
+    }
+    .greetings-dis{
+        font-size: 14px;
+    }
 }
