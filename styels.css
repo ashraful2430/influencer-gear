@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.nav-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+.nav-list{
+    display: flex;
+}
+.items{
+    list-style: none;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    pad: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-list:hover{
+    color: blue;
+}
